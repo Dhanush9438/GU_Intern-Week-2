@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Bar Loader</title>
+  <style>
+    .loading-bar {
+      width: 100%;
+      height: 4px;
+      background: #eee;
+      overflow: hidden;
+      position: relative;
+    }
+    .bar {
+      width: 0;
+      height: 100%;
+      background: #333;
+      animation: load 2s infinite;
+    }
+    @keyframes load {
+      0% {
+        width: 0;
+      }
+      50% {
+        width: 100%;
+      }
+      100% {
+        width: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-bar">
+    <div class="bar"></div>
+  </div>
+</body>
+</html>
